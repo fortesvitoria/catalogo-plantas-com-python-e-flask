@@ -1,0 +1,29 @@
+{
+    "plantas": [
+        {
+            "Ambiente": "Meia-sombra",
+            "Nome popular": "Pacová",
+            "Especie": "Philodendron martianum",
+            "Origem": "Brasil",
+            "Regar": "1 vez na semana",
+            "Imagem": ""
+        },
+        {
+            "Ambiente": "Meia-sombra",
+            "Nome popular": "Azaleia",
+            "Especie": "Rhododendron simsii",
+            "Origem": "Ásia (principalmente China e Japão)",
+            "Regar": "2 a 3 vezes na semana",
+            "Imagem": ""
+        },
+        {
+            "Ambiente": "Meia-sombra",
+            "Nome popular": "Tanzânia e África Oriental",
+            "Especie": "Saintpaulia ionantha",
+            "Origem": "Brasil",
+            "Regar": "1 a 2 vezes na semana",
+            "Imagem": ""
+        }
+
+    ]
+}
