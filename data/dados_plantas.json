@@ -34,7 +34,7 @@
             "especie": "Lantana camara",
             "origem": "América tropical",
             "regar": "1 a 2 vezes na semana",
-            "imagem": ""
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-lantana.jpg?raw=true"
         },
         {
             "id": "p5",
@@ -43,7 +43,7 @@
             "especie": "Zamioculcas zamiifolia",
             "origem": "África Oriental",
             "regar": "1 vez na semana",
-            "imagem": ""
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-zamio.jpg?raw=true"
         },
         {
             "id": "p6",
@@ -52,7 +52,7 @@
             "especie": "Anthurium andraeanum",
             "origem": "Colômbia",
             "regar": "2 vezes na semana",
-            "imagem": ""
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-anturio.jpg?raw=true"
         }
 
 
