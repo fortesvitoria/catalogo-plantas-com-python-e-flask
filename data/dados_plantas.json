@@ -1,29 +1,60 @@
 {
     "plantas": [
         {
-            "Ambiente": "Meia-sombra",
-            "Nome popular": "Pacová",
-            "Especie": "Philodendron martianum",
-            "Origem": "Brasil",
-            "Regar": "1 vez na semana",
-            "Imagem": ""
+            "id": "p1",
+            "ambiente": "Meia-sombra",
+            "nome": "Pacová",
+            "especie": "Philodendron martianum",
+            "origem": "Brasil",
+            "regar": "1 vez na semana",
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-pacova.jpg?raw=true"
         },
         {
-            "Ambiente": "Meia-sombra",
-            "Nome popular": "Azaleia",
-            "Especie": "Rhododendron simsii",
-            "Origem": "Ásia (principalmente China e Japão)",
-            "Regar": "2 a 3 vezes na semana",
-            "Imagem": ""
+            "id": "p2",
+            "ambiente": "Meia-sombra",
+            "nome": "Azaleia",
+            "especie": "Rhododendron simsii",
+            "origem": "Ásia (principalmente China e Japão)",
+            "regar": "2 a 3 vezes na semana",
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-azaleia.jpg?raw=true"
         },
         {
-            "Ambiente": "Meia-sombra",
-            "Nome popular": "Tanzânia e África Oriental",
-            "Especie": "Saintpaulia ionantha",
-            "Origem": "Brasil",
-            "Regar": "1 a 2 vezes na semana",
-            "Imagem": ""
+            "id": "p3",
+            "ambiente": "Meia-sombra",
+            "nome": "Violeta",
+            "especie": "Saintpaulia ionantha",
+            "origem": "Tanzânia e África Oriental",
+            "regar": "1 a 2 vezes na semana",
+            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-violeta.jpg?raw=true"
+        },
+        {
+            "id": "p4",
+            "ambiente": "Sol Pleno",
+            "nome": "Lantana",
+            "especie": "Lantana camara",
+            "origem": "América tropical",
+            "regar": "1 a 2 vezes na semana",
+            "imagem": ""
+        },
+        {
+            "id": "p5",
+            "ambiente": "Sombra",
+            "nome": "Zamioculca",
+            "especie": "Zamioculcas zamiifolia",
+            "origem": "África Oriental",
+            "regar": "1 vez na semana",
+            "imagem": ""
+        },
+        {
+            "id": "p6",
+            "ambiente": "Sombra",
+            "nome": "Antúrio",
+            "especie": "Anthurium andraeanum",
+            "origem": "Colômbia",
+            "regar": "2 vezes na semana",
+            "imagem": ""
         }
+
 
     ]
 }

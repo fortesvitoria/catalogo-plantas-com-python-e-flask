@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalogo de Plantas</title>
     <link rel="stylesheet" href="../static/css/sytle.css">
+    <link rel="shortcut icon" href="../static/images/icone-folhas.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -15,9 +16,12 @@
 
             <div id="meuDropdown" class="conteudo-dropdown">
                 <ul>
-                    <li><img class="icone-nav" src="../static/images/icone-planta.svg" alt=""><a class="local-atual" href="">Minhas plantas</a></li>
-                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a href="">Adicionar plantas</a></li>
-                    <li><img class="icone-nav" src="../static/images/icone-user.svg" alt=""><a href="">Meu perfil</a></li>
+                    <li><img class="icone-nav" src="../static/images/icone-planta.svg" alt=""><a class="local-atual"
+                            href="">Minhas plantas</a></li>
+                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a href="">Adicionar
+                            plantas</a></li>
+                    <li><img class="icone-nav" src="../static/images/icone-user.svg" alt=""><a href="">Meu perfil</a>
+                    </li>
                     <li><img class="icone-nav" src="../static/images/icone-logout.svg" alt=""><a href="">Sair</a></li>
                 </ul>
             </div>
@@ -30,70 +34,46 @@
 
     <main>
         <div class="cards-container">
-
+            {% for planta in plantas %}
             <!-- card1 -->
             <div class="card">
                 <div class="nav-card">
-                    <div class="div-icone titulo-card"><img class="icone-card"
-                            src="../static/images/icone-meia-sombra.svg" alt="">
-                        <h3>Meia-sombra</h3>
+                    <div class="div-icone titulo-card">
+                        {% if planta.ambiente == 'Sol Pleno' %}
+                        <img class="icone-card" src="../static/images/icone-sol-pleno.svg" alt="Ícone Sol Pleno">
+
+                        {% elif planta.ambiente == 'Meia-sombra' %}
+                        <img class="icone-card" src="../static/images/icone-meia-sombra.svg" alt="Ícone Meia Sombra">
+
+                        {% elif planta.ambiente == 'Sombra' %}
+                        <img class="icone-card" src="../static/images/icone-sombra.svg" alt="Ícone Sombra">
+
+                        {% endif %}
+                        <h3>{{ planta.ambiente }}</h3>
                     </div>
-                    <img class="img-card"
-                        src="https://gardenoficinadaterra.com.br/wp-content/uploads/2022/01/pacova-garden-2.png" alt="">
+                    <img class="img-card" src="{{ planta.imagem }}" alt="Foto da planta {{ planta.nome }}">
                 </div>
 
                 <div class="body-card">
                     <div class="div-icone">
                         <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Nome popular: Pacová</p>
+                        <p>Nome popular: {{ planta.nome }}</p>
                     </div>
                     <div class="div-icone">
                         <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Especie: Philodendron martianum</p>
+                        <p>Especie: {{ planta.especie }}</p>
                     </div>
                     <div class="div-icone">
                         <img class="icone-card" src="../static/images/icone-bandeira.svg" alt="">
-                        <p>Origem: Brasil</p>
+                        <p>Origem: {{ planta.origem }}</p>
                     </div>
                     <div class="div-icone">
                         <img class="icone-card" src="../static/images/icone-rega.svg" alt="">
-                        <p>Regar: 1 vez semana</p>
+                        <p>Regar: {{ planta.regar }}</p>
                     </div>
                 </div>
             </div>
-
-            <!-- card2 -->
-            <div class="card">
-                <div class="nav-card">
-                    <div class="div-icone titulo-card"><img class="icone-card"
-                            src="../static/images/icone-meia-sombra.svg" alt="">
-                        <h3>Meia-sombra</h3>
-                    </div>
-                    <img class="img-card"
-                        src="https://gardenoficinadaterra.com.br/wp-content/uploads/2022/01/pacova-garden-2.png" alt="">
-                </div>
-
-                <div class="body-card">
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Nome popular: Pacová</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Especie: Philodendron martianum</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-bandeira.svg" alt="">
-                        <p>Origem: Brasil</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-rega.svg" alt="">
-                        <p>Regar: 1 vez semana</p>
-                    </div>
-
-                </div>
-            </div>
-
+            {% endfor %}
 
         </div>
     </main>
