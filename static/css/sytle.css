@@ -4,7 +4,7 @@
     --dark-grey: #1B1919;
     --dark-medium-grey: #2c2b2b;
     --medium-grey: #3d3c3c;
-    --light-green: #A7E399;
+    --light-green: #BFE599;
     --off-white: #F1F1F1;
     --white: #FFF;
     --font: "Montserrat", sans-serif;
@@ -16,6 +16,7 @@ body {
     margin: 0;
 }
 
+/* INICIO HEADER *********************************************/
 
 h1 {
     font-size: 28px;
@@ -45,6 +46,8 @@ h3 {
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 20px 0;
+    position: fixed;
+    width: 100vw;
 }
 
 .nav li {
@@ -118,6 +121,17 @@ h3 {
     transform: translateX(0);
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
+/* FIM HEADER *********************************************/
+
+/* INICIO MAIN *********************************************/
+main {
+padding: 110px 0 25px 0;
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +179,10 @@ h3 {
     padding-right: 5px;
 }
 
+/* FIM MAIN **************************************************/
+
+/* INICIO FOOTER *********************************************/
+
 footer {
     background-color: var(--dark-grey);
     height: 85px;
@@ -179,3 +197,5 @@ footer p {
     font-size: 14px;
 
 }
+
+/* FIM FOOTER *********************************************/
