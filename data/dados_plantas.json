@@ -1,60 +1,13 @@
 {
     "plantas": [
         {
-            "id": "p1",
-            "ambiente": "Meia-sombra",
-            "nome": "Pacová",
-            "especie": "Philodendron martianum",
-            "origem": "Brasil",
-            "regar": "1 vez na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-pacova.jpg?raw=true"
-        },
-        {
-            "id": "p2",
-            "ambiente": "Meia-sombra",
-            "nome": "Azaleia",
-            "especie": "Rhododendron simsii",
-            "origem": "Ásia (principalmente China e Japão)",
-            "regar": "2 a 3 vezes na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-azaleia.jpg?raw=true"
-        },
-        {
-            "id": "p3",
-            "ambiente": "Meia-sombra",
-            "nome": "Violeta",
-            "especie": "Saintpaulia ionantha",
-            "origem": "Tanzânia e África Oriental",
-            "regar": "1 a 2 vezes na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-violeta.jpg?raw=true"
-        },
-        {
-            "id": "p4",
-            "ambiente": "Sol Pleno",
-            "nome": "Lantana",
-            "especie": "Lantana camara",
-            "origem": "América tropical",
-            "regar": "1 a 2 vezes na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-lantana.jpg?raw=true"
-        },
-        {
-            "id": "p5",
-            "ambiente": "Sombra",
-            "nome": "Zamioculca",
-            "especie": "Zamioculcas zamiifolia",
-            "origem": "África Oriental",
-            "regar": "1 vez na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-zamio.jpg?raw=true"
-        },
-        {
-            "id": "p6",
-            "ambiente": "Sombra",
-            "nome": "Antúrio",
+            "id": "p-d37",
+            "ambiente": "sombra",
+            "nome": "Ant\u00fario",
             "especie": "Anthurium andraeanum",
-            "origem": "Colômbia",
+            "origem": "Col\u00f4mbia",
             "regar": "2 vezes na semana",
             "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-anturio.jpg?raw=true"
         }
-
-
     ]
 }

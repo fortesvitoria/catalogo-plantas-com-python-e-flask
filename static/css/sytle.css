@@ -6,6 +6,9 @@
     --medium-grey: #3d3c3c;
     --light-green: #BFE599;
     --light-green-2: #b4ec7c;
+    --dark-green: #40641d;
+    --red: #d82a1e;
+    --salmon:#fcd4d2;
     --light-yellow: #E9E890;
     --light-blue: #AAEEEF;
     --off-white: #F1F1F1;
@@ -266,3 +269,26 @@ footer p {
 }
 
 /* FIM FOOTER *********************************************/
+
+/* INICIO MENSAGENS FLASH *********************************/
+
+.flash.success,.flash.error  {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.flash.success,.flash.error  {
+    background-color: var(--dark-green);
+    color: var(--light-green-2);
+}
+
+.flash.error {
+    background-color: var(--red); 
+    color: var(--salmon); 
+}
+
+/* FIM MENSAGENS FLASH ***********************************/
