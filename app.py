@@ -9,10 +9,13 @@ app.secret_key = 'chave-secreta'
 logica = CatalogoPlantas()
 
 @app.route('/')
-def home():
+def lista_plantas():
     lista_plantas = logica.get_plantas()
     return render_template("lista_plantas.html", plantas = lista_plantas)
 
+@app.route('/add_plantas')
+def add_plantas():
+    return render_template("add_plantas.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

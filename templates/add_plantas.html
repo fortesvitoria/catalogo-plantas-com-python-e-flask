@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
     <header class="nav">
         <div class="dropdown">
             <button id="meuBotao" class="botao-dropdown"><img src="../static/images/icone-menu.svg" alt=""></button>
@@ -18,8 +17,9 @@
             <div id="meuDropdown" class="conteudo-dropdown">
                 <ul>
                     <li><img class="icone-nav" src="../static/images/icone-planta.svg" alt=""><a class="local-atual"
-                            href="">Minhas plantas</a></li>
-                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a href="">Adicionar
+                            href="{{ url_for('lista_plantas')}}">Lista de plantas</a></li>
+                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a
+                            href="{{ url_for('add_plantas')}}">Adicionar
                             plantas</a></li>
                     <li><img class="icone-nav" src="../static/images/icone-user.svg" alt=""><a href="">Meu perfil</a>
                     </li>
@@ -34,47 +34,35 @@
     </header>
 
     <main>
-        <div class="cards-container">
-            {% for planta in plantas %}
-            <!-- card1 -->
-            <div class="card">
-                <div class="nav-card">
-                    <div class="div-icone titulo-card">
-                        {% if planta.ambiente == 'Sol Pleno' %}
-                        <img class="icone-card" src="../static/images/icone-sol-pleno.svg" alt="Ícone Sol Pleno">
+        <div class="cards-container div-form">
 
-                        {% elif planta.ambiente == 'Meia-sombra' %}
-                        <img class="icone-card" src="../static/images/icone-meia-sombra.svg" alt="Ícone Meia Sombra">
+            <form action="{{url_for('add_plantas')}}" method="post">
+                <h3>Cadastre uma planta</h3>
+                <input class="input_form" type="text" id="nome" name="nome"
+                    placeholder="Digite o nome popular da planta" required>
 
-                        {% elif planta.ambiente == 'Sombra' %}
-                        <img class="icone-card" src="../static/images/icone-sombra.svg" alt="Ícone Sombra">
+                <input class="input_form" type="text" id="especie" name="especie"
+                    placeholder="Digite a espécie da planta" required>
 
-                        {% endif %}
-                        <h3>{{ planta.ambiente }}</h3>
-                    </div>
-                    <img class="img-card" src="{{ planta.imagem }}" alt="Foto da planta {{ planta.nome }}">
-                </div>
+                 <select name="ambiente" class="input-select" required>
+                    <option value="" selected disabled>Selecione um ambiente</option>
+                            <option value="sombra">Sombra</option>
+                            <option value="meia-sombra">Meia-sombra</option>
+                            <option value="sol-pleto">Sol pleno</option>
+                        </select>
 
-                <div class="body-card">
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Nome popular: {{ planta.nome }}</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-planta.svg" alt="">
-                        <p>Especie: {{ planta.especie }}</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-bandeira.svg" alt="">
-                        <p>Origem: {{ planta.origem }}</p>
-                    </div>
-                    <div class="div-icone">
-                        <img class="icone-card" src="../static/images/icone-rega.svg" alt="">
-                        <p>Regar: {{ planta.regar }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+                <input class="input_form" type="text" id="origem" name="origem" placeholder="Digite a origem da planta"
+                    required>
+
+                <input class="input_form" type="text" id="regar" name="regar"
+                    placeholder="Digite a quantidade de rega da planta" required>
+
+                <input class="input_form" type="text" id="imagem" name="imagem"
+                    placeholder="Insira o link da imagem da planta" required>
+
+                <button type="submit" name="enviar" class="btn">Cadastrar</button>
+
+            </form>
 
         </div>
     </main>

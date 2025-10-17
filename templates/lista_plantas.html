@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
     <header class="nav">
         <div class="dropdown">
             <button id="meuBotao" class="botao-dropdown"><img src="../static/images/icone-menu.svg" alt=""></button>
@@ -18,8 +17,8 @@
             <div id="meuDropdown" class="conteudo-dropdown">
                 <ul>
                     <li><img class="icone-nav" src="../static/images/icone-planta.svg" alt=""><a class="local-atual"
-                            href="">Minhas plantas</a></li>
-                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a href="">Adicionar
+                            href="{{ url_for('lista_plantas')}}">Lista de plantas</a></li>
+                    <li><img class="icone-nav" src="../static/images/icone-add-plant.svg" alt=""><a href="{{ url_for('add_plantas')}}">Adicionar
                             plantas</a></li>
                     <li><img class="icone-nav" src="../static/images/icone-user.svg" alt=""><a href="">Meu perfil</a>
                     </li>

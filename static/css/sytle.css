@@ -5,6 +5,9 @@
     --dark-medium-grey: #2c2b2b;
     --medium-grey: #3d3c3c;
     --light-green: #BFE599;
+    --light-green-2: #b4ec7c;
+    --light-yellow: #E9E890;
+    --light-blue: #AAEEEF;
     --off-white: #F1F1F1;
     --white: #FFF;
     --font: "Montserrat", sans-serif;
@@ -127,9 +130,65 @@ h3 {
 
 /* FIM HEADER *********************************************/
 
+
+/* INICIO FORMULARIOS **************************************/
+
+.div-form {
+    height: 78vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--dark-grey);
+    border-radius: 20px;
+    color: var(--off-white);
+    width: 350px;
+}
+
+form h3{
+    color: var(--light-green);
+}
+
+.input_form,
+.btn,
+.input-select {
+    font-family: var(--font);
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    margin: 10px 10px;
+    width: 80%;
+}
+
+input:focus,
+select:focus{
+    outline: 3px solid var(--light-green);
+}
+
+.btn,
+.input-select{
+    width: 85%;
+}
+
+.btn {
+    background-color: var(--light-green);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+   background-color: var(--light-green-2);
+}
+
+/* FIM FORMULARIOS *****************************************/
+
 /* INICIO MAIN *********************************************/
 main {
-padding: 110px 0 25px 0;
+    padding: 110px 0 25px 0;
 }
 
 .cards-container {
@@ -190,6 +249,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 0 20px 0 0;
+    position: relative;
+    z-index: 2;
 }
 
 footer p {
