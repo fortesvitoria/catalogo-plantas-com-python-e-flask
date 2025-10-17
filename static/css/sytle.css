@@ -135,6 +135,10 @@ h3 {
 
 .div-form {
     height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 form {
@@ -146,7 +150,9 @@ form {
     background-color: var(--dark-grey);
     border-radius: 20px;
     color: var(--off-white);
-    width: 350px;
+    width: 330px;
+    max-height: 560px;
+    padding: 25px 5px 30px 5px;
 }
 
 form h3{
