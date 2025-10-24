@@ -7,7 +7,52 @@
             "especie": "Anthurium andraeanum",
             "origem": "Col\u00f4mbia",
             "regar": "2 vezes na semana",
-            "imagem": "https://github.com/fortesvitoria/catalogo-plantas-com-python-e-flask/blob/main/static/images/planta-anturio.jpg?raw=true"
+            "imagem": "https://cdn.awsli.com.br/2823/2823816/produto/357421216/designsemnome_33-9yzei59nz3.png"
+        },
+        {
+            "id": "p-d7d",
+            "ambiente": "sombra",
+            "nome": "Zamioculca",
+            "especie": "Zamioculcas zamiifolia",
+            "origem": "\u00c1frica Oriental",
+            "regar": "1 vez na semana",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ804bBuCqj9xPhQ_X5HUN3E1rB-hj6ZIVPAg&s"
+        },
+        {
+            "id": "p-866",
+            "ambiente": "sol-pleto",
+            "nome": "Lantana",
+            "especie": "Lantana camara",
+            "origem": "Am\u00e9rica tropical",
+            "regar": "1 a 2 vezes na semana",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Qbgyv9rP6jjr5QDXWkVppd6htdpEJhk6dw&s"
+        },
+        {
+            "id": "p-8ea",
+            "ambiente": "meia-sombra",
+            "nome": "Violeta",
+            "especie": "Saintpaulia ionantha",
+            "origem": "Tanzania e Africa oriental",
+            "regar": "1 a 2 vezes na semana",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_vCT4mvgDB6LcFROv3TolEEUiaxmXrZDiA&s"
+        },
+        {
+            "id": "p-02d",
+            "ambiente": "meia-sombra",
+            "nome": "Azaleia",
+            "especie": "Rhododendron simsii",
+            "origem": "\u00c1sia, principalmente China e Jap\u00e3o",
+            "regar": "2 a 3 vezes na semana",
+            "imagem": "https://vasoeflor.cdn.magazord.com.br/img/2023/10/produto/1946/azaleia1.jpg?ims=fit-in/800x800/filters:fill(white)"
+        },
+        {
+            "id": "p-1af",
+            "ambiente": "meia-sombra",
+            "nome": "Pacov\u00e1",
+            "especie": "Philodendron martianum",
+            "origem": "Brasil",
+            "regar": "1 vez na semana",
+            "imagem": "https://superuniversodasplantas.com.br/wp-content/uploads/2023/07/c3c7102676c5294958776342741e9e7e.jpg"
         }
     ]
 }

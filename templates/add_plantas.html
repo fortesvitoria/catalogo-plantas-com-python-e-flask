@@ -48,7 +48,7 @@
                     <option value="" selected disabled>Selecione um ambiente</option>
                     <option value="sombra">Sombra</option>
                     <option value="meia-sombra">Meia-sombra</option>
-                    <option value="sol-pleto">Sol pleno</option>
+                    <option value="sol-pleno">Sol pleno</option>
                 </select>
 
                 <input class="input_form" type="text" id="origem" name="origem" placeholder="Digite a origem da planta"
@@ -61,6 +61,8 @@
                     placeholder="Insira o link da imagem da planta" required>
 
                 <button type="submit" name="enviar" class="btn">Cadastrar</button>
+                <a href="{{ url_for('lista_plantas') }}" class="btn">Plantas cadastradas</a>
+
 
                 {% with messages = get_flashed_messages(with_categories=true) %}
                 {% if messages %}

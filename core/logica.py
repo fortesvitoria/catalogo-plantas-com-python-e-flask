@@ -41,7 +41,7 @@ class CatalogoPlantas:
 
         # Verifica se já existe a especie salva
         for planta_existente in self.__plantas.values():
-            if planta_existente.get_especie().lower == nova_especie_lower:
+            if planta_existente.get_especie().lower() == nova_especie_lower:
                 print(f"Não foi possível cadastrar. A espécie {especie} já existe no catálogo.")
                 return False #falhou
         
@@ -66,6 +66,8 @@ class CatalogoPlantas:
 
         # Salva os dados atualizado no arquivo .json
         self._salvar_dados()
+
+        return True
     
     # 5. Método para salvar os dados no arquivo .json
     def _salvar_dados(self):

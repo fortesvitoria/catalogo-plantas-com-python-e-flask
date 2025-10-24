@@ -162,6 +162,20 @@ form h3{
     color: var(--light-green);
 }
 
+a.btn {
+    text-decoration: none;
+    color: var(--light-green);
+    text-align: center;
+    width: 258px;
+    font-size: 14px;
+    background-color: var(--dark-grey);
+    border: solid 2px var(--light-green);
+}
+
+a.btn:hover{
+    color: var(--dark-grey);
+}
+
 .input_form,
 .btn,
 .input-select {
@@ -185,7 +199,9 @@ select:focus{
 
 .btn {
     background-color: var(--light-green);
+    border: solid 2px var(--light-green);
     cursor: pointer;
+    padding: 9px;
     font-weight: 500;
 }
 

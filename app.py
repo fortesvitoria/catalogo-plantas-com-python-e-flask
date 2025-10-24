@@ -34,7 +34,7 @@ def add_plantas():
         if sucesso:
             # Envia uma mensagem de sucesso para o usuário
             flash("Planta cadastrada com sucesso!", "success")
-            return redirect(url_for('lista_plantas'))
+            return redirect(url_for('add_plantas'))
         else:
             flash("Essa espécie já está cadastrada no sistema. Por favor, tente novamente.", "error")
             return redirect(url_for('add_plantas'))
